@@ -15,12 +15,25 @@ public static class FileUploadExtension
         return fileName;
     }
 
-    public static bool IsValidLength(this IFormFile file, double memoryMb)
+
+    public static bool ValidateSize(this IFormFile formFile, int MbSize)
     {
-        bool result = (double)file.Length / 1024 / 1024 <= memoryMb;
-        return result;
+        if (formFile.Length > MbSize * 1024 * 1024)
+        {
+            return false;
+        }
+        return true;
     }
 
+
+    public static bool ValidateType(this IFormFile formFile, string type = "image")
+    {
+        if (formFile.ContentType.Contains(type))
+        {
+            return true;
+        }
+        return false;
+    }
     public static void DeleteImage(this string fileName, params string[] folders)
     {
         string folderPath = Path.Combine(folders);

@@ -1,0 +1,45 @@
+﻿@using Shopwise.Areas.Admin.ViewModels.OfferSectionVMs;
+@model OfferCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div>
+    <h2>
+        Create offer section
+    </h2>
+    <form method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="alert alert-danger"></div>
+        <div>
+            <label asp-for="@Model.Image"></label>
+            <input asp-for="@Model.Image" class="form-control" />
+            <div>
+                <span asp-validation-for="@Model.Image">
+                </span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="@Model.Title"></label>
+            <input asp-for="@Model.Title" class="form-control" />
+            <div>
+                <span asp-validation-for="@Model.Title">
+                </span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="@Model.Description"></label>
+            <input asp-for="@Model.Description" class="form-control" />
+            <div>
+                <span asp-validation-for="@Model.Description">
+                </span>
+            </div>
+        </div>
+
+        <div class="mt-2">
+            <button type="submit" class="btn btn-outline-success">
+                Create
+            </button>
+        </div>
+    </form>
+</div>
+

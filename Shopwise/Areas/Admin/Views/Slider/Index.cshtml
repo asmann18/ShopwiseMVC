@@ -1,5 +1,4 @@
-﻿@using Shopwise.Entities;
-@model IEnumerable<Slider>
+﻿@model IEnumerable<Slider>
 @{
     ViewData["Title"] = "Index";
 }
@@ -53,7 +52,6 @@
                  
                     <td>
                         <div>
-                            <a asp-controller="slider" asp-action="Detail" asp-route-id="@slider.Id" class="btn btn-info btn-rounded btn-fw">Details</a>
                             <a asp-controller="slider" asp-action="Update" asp-route-id="@slider.Id" class="btn btn-warning btn-rounded btn-fw">Update</a>
                             <a asp-controller="slider" id="deleteslider" asp-action="Delete" asp-route-id="@slider.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
                         </div>

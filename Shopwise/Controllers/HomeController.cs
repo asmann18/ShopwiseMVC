@@ -1,20 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Shopwise.DAL;
+using Shopwise.ViewModels;
 
 namespace Shopwise.Controllers
 {
     public class HomeController : Controller
 
     {
-        private readonly IWebHostEnvironment _environment;
+        private readonly AppDbContext _context;
 
-        public HomeController(IWebHostEnvironment environment)
+        public HomeController(AppDbContext context)
         {
-            _environment = environment;
+            _context = context;
         }
+
+        
 
         public async Task<IActionResult> Index()
         {
-            return View();
+
+            HomeVM vm = new()
+            {
+                Sliders = _context.Sliders.ToList(),
+            };
+            return View(vm);
         }
     }
 }

@@ -1,0 +1,148 @@
+﻿@using Shopwise.Areas.Admin.ViewModels;
+@model ProductCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="All" class="alert alert-danger"></div>
+                        <div>
+                            <label asp-for="@Model.Name"></label>
+                            <input asp-for="@Model.Name" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.Name">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.ShortDescription"></label>
+                            <input asp-for="@Model.ShortDescription" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.ShortDescription">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.LongDescription"></label>
+                            <input asp-for="@Model.LongDescription" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.LongDescription">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.Price"></label>
+                            <input asp-for="@Model.Price" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.Price">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.Offer"></label>
+                            <input asp-for="@Model.Offer" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.Offer">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.Warranty"></label>
+                            <input asp-for="@Model.Warranty" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.Warranty">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.ReturnPolicy"></label>
+                            <input asp-for="@Model.ReturnPolicy" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.ReturnPolicy">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.CashOnDelivery"></label>
+                            <input asp-for="@Model.CashOnDelivery" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.CashOnDelivery">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.SKU"></label>
+                            <input asp-for="@Model.SKU" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.SKU">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.FacebookLink"></label>
+                            <input asp-for="@Model.FacebookLink" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.FacebookLink">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.TwitterLink"></label>
+                            <input asp-for="@Model.TwitterLink" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.TwitterLink">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.CategoryId"></label>
+                            <select class="form-control" asp-for="CategoryId">
+                                @foreach (Category category in ViewBag.Categories)
+                                {
+                                    <option value="@category.Id">@category.Name</option>
+                                }
+                            </select>            <div>
+                                <span asp-validation-for="@Model.CategoryId">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label asp-for="@Model.ProductImages"></label>
+                            <input asp-for="@Model.ProductImages" class="form-control" />
+                            <div>
+                                <span asp-validation-for="@Model.ProductImages">
+                                </span>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="mt-2">
+                            <button type="submit" class="btn btn-outline-success">
+                                Create
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

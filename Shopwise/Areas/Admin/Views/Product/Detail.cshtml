@@ -1,0 +1,27 @@
+﻿@model Product
+
+
+<div style="display:flex;flex-direction:column;
+gap:10px">
+
+    @foreach (var img in Model.ProductImages)
+    {
+        <img style="width:300px;height:300px;display:inline" src="~/assets/images/@img.Path" alt="EventImage" />
+
+    }
+    <h4>Name:@Model.Name</h4>
+    <h4>Short Desc: @Model.ShortDescription</h4>
+    <h4>Long Desc: @Model.LongDescription</h4>
+    <h4>Price: @Model.Price</h4>
+    <h4>Offer: @Model.Offer</h4>
+    <h4>Waranty: @Model.Warranty</h4>
+    <h4>Return Policy: @Model.ReturnPolicy</h4>
+    <h4>CashOnDelivery: @Model.CashOnDelivery</h4>
+    <h4>SKU: @Model.SKU</h4>
+    <h4>FacebookLink: @Model.FacebookLink</h4>
+    <h4>TwitterLink: @Model.TwitterLink</h4>
+    <h4>Category: @Model.Category.Name</h4>
+
+    <a asp-action="Index" class="btn btn-success">Cancel</a>
+
+</div>
