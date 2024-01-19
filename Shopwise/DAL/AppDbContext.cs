@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Shopwise.Entities;
 
 namespace Shopwise.DAL;
 
-public class AppDbContext:DbContext
+public class AppDbContext:IdentityDbContext<CustomUser>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
     {
@@ -17,4 +18,8 @@ public class AppDbContext:DbContext
     public DbSet<Product> Products   { get; set; }
     public DbSet<ProductImage> ProductImages   { get; set; }
     public DbSet<OfferSection> OfferSections{ get; set; }
+    public DbSet<OfferSection> SpecialOffers{ get; set; }
+    public DbSet<Setting> Settings{ get; set; }
+    public DbSet<Tag> Tags{ get; set; }
+    public DbSet<ProductTag> ProductTags{ get; set; }
 }

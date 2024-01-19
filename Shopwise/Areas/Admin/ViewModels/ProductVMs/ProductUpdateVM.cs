@@ -18,6 +18,6 @@ namespace Shopwise.Areas.Admin.ViewModels.ProductVMs
         public string FacebookLink { get; set; }
         public string TwitterLink { get; set; }
         public int CategoryId { get; set; }
-        public ICollection<IFormFile> ProductImages { get; set; }
+        public ICollection<IFormFile>? ProductImages { get; set; }
     }
 }

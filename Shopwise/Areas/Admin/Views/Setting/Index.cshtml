@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Setting>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="table pt-3">
+    <div>
+        <a asp-action="Create" class="btn btn-success btn-rounded btn-fw">Create</a>
+    </div>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Key 
+                </th>
+
+                <th>
+                    Value
+                </th>
+      
+
+                <th>
+                    Settings
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int count = 0;
+            }
+            @foreach (Setting setting in Model)
+            {
+                <tr>
+                    <td>
+                        @(++count)
+                    </td>
+                    <td>
+                        @setting.Key
+                    </td>
+                    <td>
+                        @setting.Value
+                    </td>
+                    
+
+                    <td>
+                        <div>
+                            <a asp-action="Update" asp-route-id="@setting.Id" class="btn btn-warning btn-rounded btn-fw">Update</a>
+                            <a id="deleteslider" asp-action="Delete" asp-route-id="@setting.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

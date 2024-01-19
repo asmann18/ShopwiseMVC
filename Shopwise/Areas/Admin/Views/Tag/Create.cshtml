@@ -1,0 +1,29 @@
+﻿@model Tag
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div>
+    <h2>
+        Create Tag
+    </h2>
+    <form method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="alert alert-danger"></div>
+
+        <div>
+            <label asp-for="@Model.Name"></label>
+            <input asp-for="@Model.Name" class="form-control" />
+            <div>
+                <span asp-validation-for="@Model.Name">
+                </span>
+            </div>
+        </div>
+      
+        <div class="mt-2">
+            <button type="submit" class="btn btn-outline-success">
+                Create
+            </button>
+        </div>
+    </form>
+</div>
+

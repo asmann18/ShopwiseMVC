@@ -1,0 +1,65 @@
+﻿@model IEnumerable<OfferSection>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="table pt-3">
+    <div>
+        <a asp-action="Create" class="btn btn-success btn-rounded btn-fw">Create</a>
+    </div>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Image
+                </th>
+
+                <th>
+                    Title
+                </th>
+                <th>
+                    Short description
+                </th>
+
+                <th>
+                    Settings
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int count = 0;
+            }
+            @foreach (OfferSection slider in Model)
+            {
+                <tr>
+                    <td>
+                        @(++count)
+                    </td>
+                    <td>
+                        <img src="~/assets/images/@slider.ImagePath" />
+                    </td>
+                    <td>
+                        @slider.Title
+                    </td>
+                    <td>
+                        @slider.Description
+                    </td>
+
+                    <td>
+                        <div>
+                            <a asp-action="Update" asp-route-id="@slider.Id" class="btn btn-warning btn-rounded btn-fw">Update</a>
+                            <a id="deleteslider" asp-action="Delete" asp-route-id="@slider.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

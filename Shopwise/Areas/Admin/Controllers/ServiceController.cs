@@ -37,12 +37,11 @@ public class ServiceController : Controller
             return View(vm);
         }
 
-        string path = Path.Combine(_environment.ContentRootPath, "wwwroot", "assets", "images");
         Service service = new()
         {
             Name = vm.Name,
             Description = vm.Description,
-            ImagePath = await vm.Image.GeneratePhoto(path)
+            ImagePath = vm.ImagePath
 
         };
 
@@ -59,8 +58,7 @@ public class ServiceController : Controller
             return NotFound();
 
         _context.Services.Remove(service);
-        string path = Path.Combine(_environment.ContentRootPath, "wwwroot", "assets", "images");
-        service.ImagePath.DeleteImage(path);
+      
 
         await _context.SaveChangesAsync();
         return RedirectToAction("Index");
@@ -76,6 +74,7 @@ public class ServiceController : Controller
             Id=id,
             Name=service.Name,
             Description=service.Description,
+            ImagePath=service.ImagePath
         };
         return View(vm);
 
@@ -94,12 +93,7 @@ public class ServiceController : Controller
         }
         exist.Name = vm.Name;
         exist.Description = vm.Description;
-        if (vm.Image is not null)
-        {
-            string path = Path.Combine(_environment.ContentRootPath, "wwwroot", "assets", "images");
-            exist.ImagePath.DeleteImage(path);
-            exist.ImagePath = await vm.Image.GeneratePhoto(path);
-        }
+       exist.ImagePath = vm.ImagePath;
 
         await _context.SaveChangesAsync();
         return RedirectToAction("Index");

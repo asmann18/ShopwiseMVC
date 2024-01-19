@@ -11,10 +11,10 @@
     <form method="post" enctype="multipart/form-data">
         <div asp-validation-summary="All" class="alert alert-danger"></div>
         <div>
-            <label asp-for="@Model.Image"></label>
-            <input asp-for="@Model.Image" class="form-control" />
+            <label asp-for="@Model.ImagePath"></label>
+            <input asp-for="@Model.ImagePath" class="form-control" />
             <div>
-                <span asp-validation-for="@Model.Image">
+                <span asp-validation-for="@Model.ImagePath">
                 </span>
             </div>
         </div>

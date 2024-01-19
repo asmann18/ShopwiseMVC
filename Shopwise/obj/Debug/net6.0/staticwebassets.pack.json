@@ -589,12 +589,28 @@
       "PackagePath": "staticwebassets\\assets\\images\\2a90181b-0981-4f8b-a949-e048e5f0d70eajax-loader.gif"
     },
     {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\32de0438-0d31-41bf-a826-e8c46b858f52shop_banner_img8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\32de0438-0d31-41bf-a826-e8c46b858f52shop_banner_img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\330c3bac-b6a1-4784-a399-fe2b510e9d6dfurniture_banner1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\330c3bac-b6a1-4784-a399-fe2b510e9d6dfurniture_banner1.jpg"
+    },
+    {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\4950cf29-2a9d-4943-b39a-a886fefa121cbanner6.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\4950cf29-2a9d-4943-b39a-a886fefa121cbanner6.jpg"
     },
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\6ec5c6e5-1fbc-45cc-a5aa-81665f057049cat_img3.png",
       "PackagePath": "staticwebassets\\assets\\images\\6ec5c6e5-1fbc-45cc-a5aa-81665f057049cat_img3.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\7a6d4f20-a79e-4dec-a011-c6ef64be5fc7shop_banner_img11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\7a6d4f20-a79e-4dec-a011-c6ef64be5fc7shop_banner_img11.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\7c8abfbe-206b-49cc-b971-fcc0dab9decdcat_img5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\7c8abfbe-206b-49cc-b971-fcc0dab9decdcat_img5.png"
     },
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\7cbee693-0a8e-4e41-aff0-4868aa981f15banner5.jpg",
@@ -607,6 +623,10 @@
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\8770b64b-f075-4c43-b1cd-29f697be247eamarican_express.png",
       "PackagePath": "staticwebassets\\assets\\images\\8770b64b-f075-4c43-b1cd-29f697be247eamarican_express.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\9224a652-4d73-4933-9811-4f8ba70f3a4fcat_img5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\9224a652-4d73-4933-9811-4f8ba70f3a4fcat_img5.png"
     },
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\9738da83-9cb6-40f3-aed1-3ce92bb0e172banner5.jpg",
@@ -849,6 +869,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\close.png"
     },
     {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\d55152ca-ca46-4dbb-8bc9-cdd1ebd6a713fn.png",
+      "PackagePath": "staticwebassets\\assets\\images\\d55152ca-ca46-4dbb-8bc9-cdd1ebd6a713fn.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\d980a955-7922-49f5-87bd-faac429edfb7cat_img2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\d980a955-7922-49f5-87bd-faac429edfb7cat_img2.png"
+    },
+    {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\d9d98a21-8e80-4fa7-9576-7b78ebc48d84banner5.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\d9d98a21-8e80-4fa7-9576-7b78ebc48d84banner5.jpg"
     },
@@ -991,6 +1019,10 @@
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\favicon.png",
       "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\fee9f240-c9ed-4169-9247-231510d49f13shop_banner_img9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\fee9f240-c9ed-4169-9247-231510d49f13shop_banner_img9.jpg"
     },
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\fffc1fb7-644d-4e40-b73c-bfc6c6220792about_img.jpg",
