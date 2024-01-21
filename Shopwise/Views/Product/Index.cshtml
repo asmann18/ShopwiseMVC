@@ -75,14 +75,14 @@
                                     </a>
                                     <div class="product_action_box">
                                         <ul class="list_none pr_action_btn">
-                                            <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
-                                            <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                            <li><a  class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                            <li><a class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
                                             <li><a asp-action="addWishlist" asp-route-id="@product.Id"><i class="icon-heart"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="product_info">
-                                    <h6 class="product_title"><a href="shop-product-detail.html">@product.Name</a></h6>
+                                    <h6 class="product_title"><a >@product.Name</a></h6>
                                     <div class="product_price">
                                             <span class="price">$@((product.Price * (100 - product.Offer)) / 100)</span>
                                         <del>$@product.Price</del>
