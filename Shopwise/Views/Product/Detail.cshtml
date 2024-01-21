@@ -67,7 +67,7 @@
                                 <span class="rating_num">(21)</span>
                             </div>
                             <div class="pr_desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                <p>@Model.ShortDescription</p>
                             </div>
                             <div class="product_sort_info">
                                 <ul>
@@ -100,12 +100,12 @@
 
                             <div class="cart_btn">
                                 <a class="add_compare" href="#"><i class="icon-shuffle"></i></a>
-                                <a class="add_wishlist" href="#"><i class="icon-heart"></i></a>
+                                <a class="add_wishlist" asp-action="AddWishlist" asp-route-id="@Model.Id" asp-controller="Product"><i class="icon-heart"></i></a>
                             </div>
                         </div>
                         <hr />
                         <ul class="product-meta">
-                            <li>SKU: <a href="#">BE45VGRT</a></li>
+                            <li>SKU: <a href="#">@Model.SKU</a></li>
                             <li>Category: <a href="#">@Model.Category.Name</a></li>
                             <li>
                                 Tags: @foreach (var tag in Model.ProduductTags)
@@ -151,8 +151,7 @@
                         </ul>
                         <div class="tab-content shop_info_tab">
                             <div class="tab-pane fade show active" id="Description" role="tabpanel" aria-labelledby="Description-tab">
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Vivamus bibendum magna Lorem ipsum dolor sit amet, consectetur adipiscing elit.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                                <p> @Model.LongDescription</p>
                             </div>
                             <div class="tab-pane fade" id="Additional-info" role="tabpanel" aria-labelledby="Additional-info-tab">
                                 <table class="table table-bordered">

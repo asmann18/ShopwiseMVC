@@ -81,7 +81,7 @@
                     <div class="text-center text-md-end">
                         <ul class="header_list">
                             <li><a href="compare.html"><i class="ti-control-shuffle"></i><span>Compare</span></a></li>
-                            <li><a href="wishlist.html"><i class="ti-heart"></i><span>Wishlist</span></a></li>
+                            <li><a asp-action="Wishlist" asp-controller="Home"><i class="ti-heart"></i><span>Wishlist</span></a></li>
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <li><a asp-controller="account" asp-action="logout"><i class="ti-user"></i><span>Logout</span></a></li>
