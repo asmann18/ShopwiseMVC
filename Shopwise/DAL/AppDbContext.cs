@@ -22,4 +22,6 @@ public class AppDbContext:IdentityDbContext<CustomUser>
     public DbSet<Setting> Settings{ get; set; }
     public DbSet<Tag> Tags{ get; set; }
     public DbSet<ProductTag> ProductTags{ get; set; }
+    public DbSet<WishList> WishLists{ get; set; }
+
 }

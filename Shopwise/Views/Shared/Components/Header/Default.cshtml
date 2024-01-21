@@ -60,20 +60,20 @@
                     <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                         <div class="lng_dropdown me-2">
                             <select name="countries" class="custome_select">
-                                <option value='en' data-image="assets/images/eng.png" data-title="English">English</option>
-                                <option value='fn' data-image="assets/images/fn.png" data-title="France">France</option>
-                                <option value='us' data-image="assets/images/us.png" data-title="United States">United States</option>
+                                <option value='us' data-image="assets/images/@Model["Language3Image"]" data-title="@Model["Language3"]">@Model["Language1"]</option>
+                                <option value='us' data-image="assets/images/@Model["Language1Image"]" data-title="@Model["Language1"]">@Model["Language1"]</option>
+                                <option value='us' data-image="assets/images/@Model["Language2Image"]" data-title="@Model["Language2"]">@Model["Language2"]</option>
                             </select>
                         </div>
                         <div class="me-3">
                             <select name="countries" class="custome_select">
-                                <option value='USD' data-title="USD">USD</option>
-                                <option value='EUR' data-title="EUR">EUR</option>
-                                <option value='GBR' data-title="GBR">GBR</option>
+                                <option value='@Model["Language1"]' data-title="@Model["Language1"]">@Model["Language1"]</option>
+                                <option value='@Model["Language2"]' data-title="@Model["Language2"]">@Model["Language2"]</option>
+                                <option value='@Model["Language3"]' data-title="@Model["Language3"]">@Model["Language3"]</option>
                             </select>
                         </div>
                         <ul class="contact_detail text-center text-lg-start">
-                            <li><i class="ti-mobile"></i><span>123-456-7890</span></li>
+                            <li><i class="ti-mobile"></i><span>@Model["Phone"]</span></li>
                         </ul>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo_light" src="~/assets/images/logo_light.png" alt="logo" />
-                    <img class="logo_dark" src="~/assets/images/logo_dark.png" alt="logo" />
+                    <img class="logo_dark" src="~/assets/images/@Model["Logo"]" alt="logo" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
                     <span class="ion-android-menu"></span>
