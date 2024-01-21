@@ -27,7 +27,7 @@ namespace Shopwise.Controllers
             HomeVM vm = new()
             {
                 Sliders = _context.Sliders.ToList(),
-                Products = _context.Products.ToList(),
+                Products = _context.Products.Include(x=>x.ProductImages).ToList(),
                 SpecialOffer = _context.SpecialOffers.FirstOrDefault(),
                 TopCategories = _context.Categories.ToList(),
                 TrendingProducts = _context.Products.Include(x=>x.ProductImages).Include(x=>x.Category).Where(x=>x.Category.Name=="Trending").ToList(),

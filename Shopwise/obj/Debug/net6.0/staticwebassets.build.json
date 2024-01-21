@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HS52dLp+fJZektcjE3szZTa8PFe5A57J5lncnTQr/a4=",
+  "Hash": "yV9y7y3G9CBnuAxlHCm1lXoKa3mjjvRpGBqYNyYC1Dw=",
   "Source": "Shopwise",
   "BasePath": "_content/Shopwise",
   "Mode": "Default",
@@ -2565,6 +2565,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\4950cf29-2a9d-4943-b39a-a886fefa121cbanner6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\5adf0c85-f1f7-4733-912b-2c5d4e648171blog_single_img2.jpg",
+      "SourceId": "Shopwise",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\",
+      "BasePath": "_content/Shopwise",
+      "RelativePath": "assets/images/5adf0c85-f1f7-4733-912b-2c5d4e648171blog_single_img2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\5adf0c85-f1f7-4733-912b-2c5d4e648171blog_single_img2.jpg"
     },
     {
       "Identity": "C:\\Users\\DELL\\source\\repos\\Shopwise\\Shopwise\\wwwroot\\assets\\images\\6ec5c6e5-1fbc-45cc-a5aa-81665f057049cat_img3.png",

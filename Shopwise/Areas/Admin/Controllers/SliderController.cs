@@ -1,15 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shopwise.Areas.Admin.ViewModels.SliderVMs;
 using Shopwise.DAL;
 using Shopwise.Entities;
 using Shopwise.Helpers;
-using Shopwise.Migrations;
-using System.IO;
 
 namespace Shopwise.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
+
 public class SliderController : Controller
 {
     private readonly AppDbContext _context;

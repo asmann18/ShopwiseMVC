@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Shopwise.Areas.Admin.ViewModels.ProductVMs;
 using Shopwise.Areas.Admin.ViewModels.ServiceVMs;
-using Shopwise.Areas.Admin.ViewModels.SliderVMs;
 using Shopwise.DAL;
 using Shopwise.Entities;
-using Shopwise.Helpers;
 
 namespace Shopwise.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
+
 public class ServiceController : Controller
 {
     private readonly AppDbContext _context;

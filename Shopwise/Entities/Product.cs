@@ -20,7 +20,7 @@ public class Product
     public Category Category { get; set; }
     public int CategoryId { get; set; }
     public List<ProductImage> ProductImages { get; set; }
-    public ICollection<ProductTag> ProduductTags { get; set; }
+    public List<ProductTag> ProduductTags { get; set; }
 
 
 }

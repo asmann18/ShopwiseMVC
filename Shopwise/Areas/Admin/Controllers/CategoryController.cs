@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shopwise.Areas.Admin.ViewModels.CategoryVMs;
 using Shopwise.DAL;
@@ -8,6 +9,8 @@ using Shopwise.Helpers;
 namespace Shopwise.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;

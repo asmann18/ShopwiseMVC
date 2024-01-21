@@ -118,6 +118,18 @@
                             </div>
                         </div>
                         <div>
+                            <label asp-for="@Model.TagIds"></label>
+                            <select class="form-control" asp-for="TagIds">
+                                @foreach (Tag tag in ViewBag.Tags)
+                                {
+                                    <option value="@tag.Id">@tag.Name</option>
+                                }
+                            </select>            <div>
+                                <span asp-validation-for="@Model.TagIds">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
                             <label asp-for="@Model.ProductImages"></label>
                             <input asp-for="@Model.ProductImages" class="form-control" />
                             <div>

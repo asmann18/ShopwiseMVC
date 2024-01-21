@@ -17,5 +17,6 @@ public class ProductCreateVM
     public string FacebookLink { get; set; }
     public string TwitterLink { get; set; }
     public int CategoryId { get; set; }
+    public List<int> TagIds { get; set; }
     public ICollection<IFormFile> ProductImages { get; set; }
 }
